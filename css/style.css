@@ -8,11 +8,11 @@ body{
     border: none;
     background-color: #fff;
     font-size: 1.5rem;
-    color: #fca61f;
+    color: pink;
 }
 /* styling navbar links  */
 .navbar-nav a{
-    color: black;
+    color: #6f34fe;
     position: relative;
 }
 .navbar-nav a:hover{
