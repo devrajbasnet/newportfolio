@@ -1,927 +1,1144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Devraj Basnet</title>
 
-    <!-- bootstrap css cdn link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devraj Basnet</title>
 
-    <!-- custom css file -->
-    <link rel="stylesheet" href="css/style.css" />
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="images/portfolio.png" type="image/x-icon">
 
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- bootstrap icon cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 
-    <!-- for adding animation to website we have use AOS library 
-    AOS Library css file cdn link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<body>
 
-    <!-- jquery cdn link  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  </head>
-  <body>
+  <!--
+    - #MAIN
+  -->
 
-    <!-- navbar starts -->
-    <nav
-      id="navbar-top"
-      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
-    >
-      <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-          >Devraj Basnet</a
-        >
-        <button
-          class="nav-menu d-md-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="bi bi-menu-button-fill"></i>
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="images/devrajnew12.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Devraj Basnet</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonial">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-          </ul>
-        </div>
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+
       </div>
-    </nav>
-    <!-- navbar ends here -->
-    <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
-      <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
-        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">DEVRAJ BASNET</span>
-          </h2>
-          <p class="text-muted">
-            <b><i>Software Developer with expertise in React Js and Asp.Net</i></b><br/>
-            <b><i> Currently working at <span>Siliconsoft and IT consultant Pvt.Ltd</i></b>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="2058@devrajbasnet.com.np" class="contact-link">2058@devrajbasnet.com.np</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:982541897" class="contact-link">9825418097</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2001-09-03">December 18,2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Suryabinayak,Bhaktapur</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/jrdevubasnet" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.github.com/devrajbasnet" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/devraj-basnet-55768a21b" class="social-link">
+              <ion-icon name="logo-linkedIn"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+          Hello I'm DEVRAJ BASNET
           </p>
-         <div class="nepali-marquee">
-    <span>“ज्ञानले जीवन उज्यालो बनाउँछ|” </span>
-</div>
-          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            Hire Me
-          </button>
-          <div class="social-links mt-5" data-aos="fade-up"></div>
-          <a href="https://www.facebook.com/jrdevubasnet" target="_blank" class="btn rounded-pill facebook">
-            <i class="bi bi-facebook"></i>
-          </button>
-          <a href="https://www.github.com/devrajbasnet" target="_blank" class="btn rounded-pill github">
-            <i class="bi bi-github"></i>
-          </button>
-          <a href="https://www.linkedin.com/in/devraj-basnet-55768a21b" target="_blank" class="btn rounded-pill linkedin">
-            <i class="bi bi-linkedin"></i>
-          </button>
-          <a href="" class="link ms-4 d-none">See My Work</a>
-        </div>
-        <div class="col-10 col-md-4 text-center mt-4">
-          <img src="images/devrajnew12.png" class="img-fluid" alt="Devraj Basnet" />
 
-        </div>
-      </div>
-    </section>
-    <!-- home section ends here -->
-    <!-- expertise section starts -->
-    <section class="expertise mt-5" id="service">
-      <div class="heading text-center">
-        <small>My Expertise</small>
-        <h3>
-          Provide Wide Range of <br />
-          Digital Services
-        </h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-10 col-md-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon1.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Web Development</h4>
-              <p class="text-muted">
-                As a Web Developer, I specialize in designing, developing, and maintaining responsive and user-friendly websites
-                 using HTML, CSS, and JavaScript and also react js. I focus on creating clean, efficient code and delivering seamless user experiences
-                  across devices and browsers. With a strong understanding of front-end frameworks and back-end integration,
-                   I aim to build fast, functional, and visually appealing web applications that align with client and user needs.
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon2.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Backend Development</h4>
-              <p class="text-muted">
-                As a .NET Developer, I develop and maintain scalable, secure, and high-performance web applications using the
-                 Microsoft .NET framework. I have hands-on experience with C#, ASP.NET MVC/Core, Entity Framework, and SQL Server. 
-                 My focus is on writing clean, maintainable code following best practices and design patterns like Repository and Unit of Work.
-                  I excel in integrating front-end technologies with robust back-end systems,
-                 delivering end-to-end solutions that meet business goals efficiently.
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-10" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon3.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Debugging</h4>
-              <p class="text-muted">
-                Skilled in identifying, analyzing, and resolving bugs across front-end and back-end systems. 
-                I use debugging tools, logs, and performance monitoring techniques to quickly locate issues and implement 
-                effective solutions, ensuring smooth and reliable application performance. My strong analytical mindset helps me 
-                troubleshoot complex problems efficiently during both development and post-deployment stages.
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- expertise section ends here -->
-    <!-- skill section starts -->
-    <section class="skill mt-5 py-5" id="about">
-      <div class="row justify-content-evenly">
-        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress html-css">
-                  <span class="progress-value html-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">HTML,CSS,JAVASCRIPT</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress javascript">
-                  <span class="progress-value javascript-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">REACT JS</span>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress php">
-                  <span class="progress-value php-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">ASP.NET</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <div class="circular-progress reactjs">
-                  <span class="progress-value reactjs-progress">0%</span>
-                </div>
-                <br>
-                <span class="text">PYTHON And JAVA</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-          <div class="heading mt-5 mt-md-3">
-            <small>My Skills</small>
-            <h3>Beautiful & Unique Digital Experiences</h3>
-            <p class="text-muted">
-              🚀 Front-end development with HTML, CSS, JavaScript, and React.js<br/>
-              🧠 Strong in C, C++, Java, Python, and C# with OOP principles<br/>
-              🛠️ Back-end experience using ASP.NET Core and C#<br/>
-              📦 Skilled with Repository and Unit of Work design patterns<br/>
-              💾 Proficient in MySQL, SQL Server, and MongoDB<br/>
-              🔍 Excellent debugging and problem-solving abilities<br/>
-              🎯 Familiar with data structures and algorithms<br/>
-              🎨 Basic UI/UX design and graphic design knowledge<br/>
-              📱 Responsive web design for all devices<br/>
-              🌐 Version control using Git and GitHub<br/>
-              🧪 Testing and error handling in development workflows<br/>
-              📈 Capable of building scalable web apps<br/>
-              💼 Good understanding of software development life cycle<br/>
-              🗣️ Strong communication and teamwork skills<br/>
-             <p class="text-muted">
-            </p>
-            
-            <div class="education mt-4">
-              <small>Education</small>
-              <p class="text-muted">
-                🎓 <strong>Bachelor's of Science in Computer Science and Information Technology</strong><br/>
-                📍 Swastik College (TU) <br/>
-                📅 2019 – 2024<br/>
-                <a href="https://swastikcollege.edu.np/" class="link" target="_blank">View College</a>
-              </p>
-            </div>
-            <p class="text-muted">
-              🎓 <strong>School leaving Certificate(+2)</strong><br/>
-              📍 Shree Padma Secondary School <br/>
-              📅 2017 – 2019<br/>
-               <a href="https://www.facebook.com/shreepadmaschool/" class="link" target="_blank">View College</a>
-            </p>
-            <p class="text-muted">
-              🎓 <strong>Secondary Education Examination</strong><br/>
-              📍 Hanumanteshwor Secondary School <br/>
-              📅 2013 – 2017<br/>
-              <a href="https://www.collegenp.com/school/hanumanteshwor-secondary-school" class="link" target="_blank">View School</a>
-            </p>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              <!-- here download attribute is used for adding download functionality to button  -->
-              <a
-                href="images/devrajupdatedcv.pdf"
-                download="Devraj Basnet"
-                style="text-decoration: none;color: #fff;"
-                >Download CV</a
-              >
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- skill section end here -->
-    <!-- portfolio section starts here -->
-    <section class="portfolio" id="portfolio">
-      <div class="heading text-center pt-5">
-        <small>Creative Work</small>
-        <h3>Check My Portfolio</h3>
-      </div>
-      <div id="myBtnContainer" class="text-center mt-4">
-        <!-- here we will create custom attribute using data- for filtering -->
-        <button class="filter-item" data-filter="all">All</button>
-        <button class="filter-item" data-filter="academic">Academic</button>
-        <button class="filter-item" data-filter="professional">Professional</button>
-      </div>
-      <div class="portfolio-body">
-        <div class="row justify-content-evenly px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/everestmomo.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Everest MoMO Webapp</h4>
-                <span class="badge bg-secondary badge-pill">HTML and CSS</span>
-                <span class="badge bg-secondary badge-pill">Javascript</span>
-                <span class="badge bg-secondary badge-pill mb-2">React</span
-                ><br />
-              <a href="https://neweverestmomo.com/" class="link" target="_blank">View Project</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/nagarjun1.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">E-Sifaris System</h4>
-                <span class="badge bg-secondary badge-pill">Asp.Net Core</span>
-                <span class="badge bg-secondary badge-pill">Entity Framework</span>
-                <span class="badge bg-secondary badge-pill mb-2">Angular</span
-                ><br />
-                <a href="https://demo.hamrosystem.com/Account/Login?ReturnUrl=%2F" class="link" target="_blank">View  Project</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/nagarjun.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">E-Complaint System</h4>
-                <span class="badge bg-secondary badge-pill">Asp.Net Core</span>
-                <span class="badge bg-secondary badge-pill">Entity Framework </span>
-                <span class="badge bg-secondary badge-pill mb-2">Angular</span
-                ><br />
-                   <a href="https://gunaso.hamrosystem.com/" class="link" target="_blank">View  Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-evenly mt-4 px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/hospital1.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Hospital Management System</h4>
-                <span class="badge bg-secondary badge-pill">Asp.Net</span>
-                <span class="badge bg-secondary badge-pill">Entity Framework</span>
-                <span class="badge bg-secondary badge-pill mb-2">Web App</span
-                ><br />
-                <a href="https://localhost:44393/Identity/Account/Register" class="link" target="_blank">View  Project</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img src="images/moviestore.png" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h4 class="card-title">Movie Store Web App</h4>
-                <span class="badge bg-secondary badge-pill">Asp.Net Core</span>
-                <span class="badge bg-secondary badge-pill">Entity Framework</span>
-                <span class="badge bg-secondary badge-pill mb-2">Angular</span
-                ><br />
-                <a href="https://localhost:44331/UserAuthentication/Login" class="link" target="_blank">View  Project</a>
-              </div>
-            </div>
-          </div>
-          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
-            <div class="card">
-              <img
-                src="images/breast.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center">
-                <h4 class="card-title">Breast Cancer Detection System</h4>
-                <span class="badge bg-secondary badge-pill">Django</span>
-                <span class="badge bg-secondary badge-pill">Python</span>
-                <span class="badge bg-secondary badge-pill mb-2">Web App</span
-                ><br />
-              <a href="http://127.0.0.1:8000/admin/login/?next=/admin/" class="link" target="_blank">View  Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- portfolio section ends here -->
+          <p>
+           Software Developer with expertise in React Js and Asp.Net <br/>
+           Currently working at Siliconsoft and IT consultant Pvt.Ltd
+          </p>
+        </section>
 
-    <!-- testimonial section starts  -->
-    <section class="testimonial mt-5 pt-5" id="testimonial">
-      <div class="row justify-content-evenly">
-        <div class="col-md-4 col-10" data-aos="slide-right">
-          <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
-        </div>
-        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
-          <div class="heading">
-            <small>Testimonials</small>
-            <h3>Happy Clients Feedback</h3>
-            <!-- here we will use carousel element from bootstrap -->
-            <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        Devraj brings strong technical skills and a calm, collaborative energy to every task.
-                         His knowledge in .NET and frontend technologies is truly impressive."
-                      </p>
-                      <h4>Atit Ghimire</h4>
-                      <small class="fs-6 text-muted">Backend Developer</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        "I was impressed by his ability to take ownership of problems and deliver clean,
-                         efficient code. His debugging skills saved us countless hours.
-                      </p>
-                      <h4>Ram Timilsina</h4>
-                      <small class="fs-6 text-muted">Full Stack Developer</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        Devraj not only develops great web applications but also ensures 
-                        they are user-friendly and responsive. He’s a great asset to any tech team."
-                      </p>
-                      <h4>Rama Khatri</h4>
-                      <small class="fs-6 text-muted">UI/UX Designer</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="nextprev-btn rounded-pill prev-btn"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <i class="bi bi-arrow-left-circle-fill prev"></i>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="nextprev-btn rounded-pill next-btn"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <i class="bi bi-arrow-right-circle-fill next"></i>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- testimonial ends here -->
 
-    <!-- blog section starts -->
-    <section class="blog mt-5 pb-5" id="blog">
-      <div class="heading text-center pt-5">
-        <small>Latest News</small>
-        <h3>Blog & Articles</h3>
-      </div>
-      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
-        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
-          <div class="card">
-            <img
-              src="images/mrdev.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Devraj Basnet</small
-              ><span class="ms-3">Dec 8,2024</span>
-              <h4 class="card-title">
-                <a href="">Image</a>
-              </h4>
-              <p class="text-muted">
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">View More</a>
-            </div>
-          </div>
-        </div>
-        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
-          <div class="card">
-            <img
-              src="images/group.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Devraj Basnet</small
-              ><span class="ms-3">Dec 10,2024</span>
-              <h4 class="card-title">
-                <a href="">Image</a>
-              </h4>
-              <p class="text-muted">
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">View More</a>
-            </div>
-          </div>
-        </div>
-        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
-          <div class="card">
-            <img
-              src="images/group2.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Devraj Basnet</small
-              ><span class="ms-3">Dec 12,2024</span>
-              <h4 class="card-title">
-                <a href="">Image</a>
-              </h4>
-              <p class="text-muted">
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">View More</a>
-            </div>
-          </div>
-        </div>
-        <!-- here we will make modals if Read more link is clicked the modal will popup -->
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/mrdev.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Devraj Basnet</small
-                    ><span class="text-muted ms-2">2024</span>
-                  <h4 class="card-title mt-3">Thank you for visiting</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill facebook">
-                        <i class="bi bi-facebook"></i>
-                      </button>
-                      <button href="" class="rounded-pill github">
-                        <i class="bi bi-github"></i>
-                      </button>
-                      <button href="" class="rounded-pill linkedin">
-                        <i class="bi bi-linkedin"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Graphic Design</h4>
+
+                <p class="service-item-text">
+                  As a graphic designer, I specialize to create visual content to communicate ideas 
+                  effectively. I also  design logos, marketing materials, and digital assets
+                   while maintaining brand consistency. My role includes developing creative concepts
+                   , editing images, and ensuring user-friendly designs for websites and apps aslo
+                    collaborate with teams, stay updated on design trends, and prepare files for
+                     print or digital use..
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  As a Web Developer, I specialize in designing, developing, and maintaining 
+                  responsive and user-friendly websites using HTML, CSS, and JavaScript and also
+                   react js. I focus on creating clean, efficient code and delivering seamless user
+                    experiences across devices and browsers. With a strong understanding of front-end
+                     frameworks and back-end integration, I aim to build fast, functional, and 
+                     visually appealing web applications that align with client and user needs..
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+
+                <p class="service-item-text">
+                  As a .NET Developer, I develop and maintain scalable, secure, and high-performance web applications 
+                  using the Microsoft .NET framework. I have hands-on experience with C#, ASP.NET MVC/Core, 
+                  Entity Framework, and SQL Server. My focus is on writing clean, maintainable code following best
+                   practices and design patterns like Repository and Unit of Work. I excel in 
+                   integrating front-end technologies with robust back-end systems, delivering 
+                   end-to-end solutions that meet business goals efficiently..
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Debugging</h4>
+
+                <p class="service-item-text">
+                  Skilled in identifying, analyzing, and resolving bugs across front-end 
+                  and back-end systems. I use debugging tools, logs, and performance monitoring
+                   techniques to quickly locate issues and implement effective solutions, ensuring
+                    smooth and reliable application performance. My strong analytical mindset helps
+                     me troubleshoot complex problems efficiently during both development 
+                     and post-deployment stages.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="images/avatar-1.png" alt="Ram Timilsina" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ram Timilsina</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    "I was impressed by his ability to take ownership of problems and 
+                    deliver clean, efficient code. His debugging skills saved us countless hours.
                   </p>
                 </div>
+
               </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="images/avatar-4.png" alt="Atit Ghimire" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Atit Ghimire</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                   Devraj brings strong technical skills and a calm, collaborative
+                   energy to every task. His knowledge in .NET and frontend technologies is truly impressive."
+                  </p>
+                </div>
+
               </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="images/avatar-3.png" alt="Rama Ghimire" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rama Ghimire</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Devraj not only develops great web applications but also ensures
+                     they are user-friendly and responsive. He’s a great asset to any tech team."
+                  </p>
                 </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
+
               </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/group.png" class="img-fluid" alt="">
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="images/avatar-4.png" alt="Sabin Gautam" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sabin Gautam</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    "I was impressed by his ability to take ownership of problems and deliver clean, 
+                    efficient code. His debugging skills saved us countless hours.
+                  </p>
                 </div>
-                <div class="content mt-3">
-                  <small>By Devraj Basnet</small
-                    ><span class="text-muted ms-2 ms-md-0">2024</span>
-                  <h4 class="card-title mt-3">Thank you for visiting</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill facebook">
-                        <i class="bi bi-facebook"></i>
-                      </button>
-                      <button href="" class="rounded-pill github">
-                        <i class="bi bi-github"></i>
-                      </button>
-                      <button href="" class="rounded-pill linkedin">
-                        <i class="bi bi-linkedin"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3"></p>
-                </div>
+
               </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/group2.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Devraj Basnet</small
-                    ><span class="text-muted ms-2 ms-md-0">2024</span>
-                  <h4 class="card-title mt-3">Thank you for visiting</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill facebook">
-                        <i class="bi bi-facebook"></i>
-                      </button>
-                      <button href="" class="rounded-pill github">
-                        <i class="bi bi-github"></i>
-                      </button>
-                      <button href="" class="rounded-pill linkedin">
-                        <i class="bi bi-linkedin"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3"></p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- blog section ends here -->
-    <!-- contact section starts -->
-    <section class="contact py-5" id="contact">
-      <div class="heading text-center">
-        <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
-      </div>
-      <div class="row justify-content-evenly mt-5">
-        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-geo-alt-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>Suryabinayak,Bhaktapur</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-telephone-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>9825418097</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-send-fill"></i>
-            </div>
-            <div class="col-11">
-              <p>2058@devrajbasnet.com.np</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-globe-americas"></i>
-            </div>
-            <div class="col-11">
-              <p>devrajbasnet.com.np</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
-          <div class="contact-form">
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Name"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Mobile No."
-              />
-            </div>
-            <div class="mb-3">
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                placeholder="Message"
-                rows="5"
-              ></textarea>
-            </div>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              Submit
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
             </button>
-          </div>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="images/avatar-1.png" alt="Ram Timilsina" width="80" data-modal-img>
+              </figure>
+
+              <img src="images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Ram Timilsina</h4>
+
+              <time datetime="Backend Developer">Backend Developer</time>
+
+              <div data-modal-text>
+                <p>
+                 "I was impressed by his ability to take ownership of problems and deliver clean, 
+                  efficient code. His debugging skills saved us countless hours.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-      </div>
-    </section>
-    <!-- contact section ends here -->
 
-      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
-    <button
-      type="button"
-      class="btn btn-floating btn-lg rounded-pill"
-      id="btn-back-to-top"
-    >
-      <i class="bi bi-arrow-up"></i>
-    </button>
 
-    <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4">
-      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
-      <div class="link-group mt-5" data-aos="fade-up">
-        <a href="#home">Home</a>
-        <div class="vr"></div>
-        <a href="#about">About</a>
-        <div class="vr"></div>
-        <a href="#service">Service</a>
-        <div class="vr"></div>
-        <a href="#portfolio">Portfolio</a>
-        <div class="vr"></div>
-        <a href="#blog">Blog</a>
-        <div class="vr"></div>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="social-links mt-5" data-aos="fade-up">
-        <a href="https://facebook.com/devrajbasnet"  class="btn rounded-pill facebook">
-          <i class="bi bi-facebook"></i> 
-          </a>
-        <a href="https://github.com/devrajbasnet" target="_blank" class="btn rounded-pill github">
-          <i class="bi bi-github"></i>
-          </a>
-        <a href="https://www.linkedin.com/in/devraj-basnet-55768a21b" target="blank" class=" btn rounded-pill linkedin">
-          <i class="bi bi-linkedin"></i>
-          </a>
-      </div>
-      <hr class="text-muted my-4" />
-      <p>Copyright 2025 Devraj Basnet | All Rights Reserved.</p>
-    </footer>
-    <!-- footer section ends here -->
+        <!--
+          - Skills
+        -->
 
-      <!-- bootstrap javascript cdn link  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+        <section class="clients">
 
-    <!-- AOS library javascript link  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      // initializing AOS library
-      AOS.init({
-        duration: 1000,
-        offset: 50,
-      });
-    </script>
-    <!-- custom js file linking -->
-    <script src="js/script.js"></script>
-    
-  </body>
+          <h3 class="h3 clients-title">My Skills</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/react.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/javascript.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/python.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/javalogo.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/cc.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/seo.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/digital.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Swastik College (Affilated to Tribhuvan University)</h4>
+
+              <span> 📅2019—2024</span>
+              <p class="timeline-text">
+                🎓 <strong>Bachelor's of Science in Computer Science and Information Technology</strong><br/>
+                <a href="https://swastikcollege.edu.np/" class="link" target="_blank">View College</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Shree Padma Secondary School</h4>
+
+              <span>📅2017—2019</span>
+
+              <p class="timeline-text">
+                🎓 <strong>School leaving Certificate (+2 Science)</strong><br/>
+                <a href="https://www.facebook.com/shreepadmaschool/" class="link" target="_blank">View College</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Shree Hanumanteshwor Secondary School</h4>
+
+              <span>📅2013-2017</span>
+
+              <p class="timeline-text">
+                🎓 <strong>Secondary Education Examination</strong><br/>
+                <a href="https://www.collegenp.com/school/hanumanteshwor-secondary-school" class="link" target="_blank">View School</a>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Backend Developer (Asp.Net)</h4>
+
+              <span>📅2024 — Present</span>
+
+              <p class="timeline-text">
+📍 Develop and maintain robust web applications using .NET technologies, ensuring high performance and responsiveness.<br/>
+📍 Design and manage relational databases with Entity Framework and SQL Server, optimizing data storage and retrieval.<br/>
+📍 Collaborate with cross-functional teams to gather requirements and deliver tailored solutions that meet client needs.<br/>
+📍 Implement RESTful APIs using ASP.NET Core, enhancing system integration and functionality.<br/>
+📍 Conduct thorough testing and debugging to ensure software reliability and quality.<br/>
+📍 Optimize application performance, scalability, and security through best practices and code reviews.<br/>
+📍 Provide training and support to clients and end-users, ensuring smooth adoption of new systems.<br/>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Frontend Developer(React)</h4>
+
+              <span>📅Jul,2024—Oct,2024</span>
+
+              <p class="timeline-text">
+  📍Developed responsive UI components using React.js and enhanced application performance.<br/>
+📍 Integrated RESTful APIs, managed state using Redux, and improved frontend UX/UI design.<br/>
+📍 Used Git & Jira for version control and agile project tracking
+              </p>
+
+            </li>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Backend Development</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Devops and Tools</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Other Skills</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+        </section>
+<a
+                href="images/Devraj Basnet.pdf"
+                download="Devraj Basnet"
+                style="text-decoration: none;color: #fff;"
+                >Download CV</a>
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Webapp development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Webapp development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="Web Development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                
+
+                  <img src="images/everestmomo.png" alt="Webapp" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Everest MoMo Webapp</h3>
+
+                <p class="project-category">Web development</p>
+               <a href="https://neweverestmomo.com/" target="_blank" class="view-project-btn">View Project
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Webapp Development">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="images/nagarjun1.png" alt="Webapp" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">E-Sifaris System</h3>
+
+                <p class="project-category">Webapp Development</p>
+                <a href="https://demo.hamrosystem.com/Account/Login?ReturnUrl=%2F" class="link" target="_blank">View  Project</a>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Webapp Development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/nagarjun.png" alt="Webapp" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">E-Complaint System</h3>
+
+                <p class="project-category">Webapp Development</p>
+                <a href="https://gunaso.hamrosystem.com/" class="link" target="_blank">View  Project</a>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Webapp Development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/hospital1.png" alt="hospital" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Hospital Management System</h3>
+
+                <p class="project-category">Webapp Development</p>
+                <a href="https://localhost:44393/Identity/Account/Register" class="link" target="_blank">View  Project</a>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="WeBapp Development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/moviestore.png" alt="movie" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Movie Store Webapp</h3>
+
+                <p class="project-category">Webapp Development</p>
+                <a href="https://localhost:44331/UserAuthentication/Login" class="link" target="_blank">View  Project</a>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Web Development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/breast.png" alt="cancer" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Breast Cancer Detection System</h3>
+
+                <p class="project-category">Webapp Development</p>
+                    <a href="http://127.0.0.1:8000/admin/login/?next=/admin/" class="link" target="_blank">View  Project</a>
+
+              </a>
+            </li>
+
+           
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog and Articles</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="images/mrdev.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Image</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-12-20">Dec 20, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">College Farewell and Graduation Ceremony 2024</h3>
+
+                  <p class="blog-text">
+                    
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="images/group.png" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Image</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">College Farewell and Graduation Ceremony 2024</h3>
+
+                  <p class="blog-text">
+                   
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="images/group2.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Image</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">College Farewell and Graduation Ceremony 2024</h3>
+
+                  <p class="blog-text">
+                    
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="images/group3.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Image</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Visiting Jamacho</h3>
+
+                  <p class="blog-text">
+                    
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="images/group4.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Image</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Visiting Shivapuri National Park</h3>
+
+                  <p class="blog-text">
+                    
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="images/personal.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Image</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Visiting Shailung</h3>
+
+                  <p class="blog-text">
+                    
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.987654321!2d85.317999!3d27.672664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19863e5b9bfb%3A0xa1b2c3d4e5f6g7h8!2sBhaktapur%2C%20Nepal!5e0!3m2!1sen!2sbd!4v1693485600000!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+               <input type="phone" name="phone" class="form-input" placeholder="Phone Number" required data-form-input>
+                <input type="address" name="adress" class="form-input" placeholder="Your Address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
-
