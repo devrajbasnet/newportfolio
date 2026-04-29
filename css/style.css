@@ -1882,3 +1882,297 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
+/*-----------------------------------*\
+  #animations.css
+  Add-on animations — no existing styles changed
+\*-----------------------------------*/
+
+
+/* ============================================================
+   ANIMATED BACKGROUND CANVAS
+   ============================================================ */
+
+#animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.25;
+}
+
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.05s; }
+.reveal-delay-2 { transition-delay: 0.15s; }
+.reveal-delay-3 { transition-delay: 0.25s; }
+.reveal-delay-4 { transition-delay: 0.35s; }
+
+
+/* ============================================================
+   AVATAR — FLOATING
+   ============================================================ */
+
+.avatar-box {
+  animation: float 4.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-9px); }
+}
+
+
+/* ============================================================
+   TIMELINE DOT — PULSE
+   ============================================================ */
+
+.timeline-item::after {
+  animation: dot-pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes dot-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px var(--jet); }
+  50%       { box-shadow: 0 0 0 4px var(--jet), 0 0 12px hsla(45, 100%, 72%, 0.55); }
+}
+
+
+/* ============================================================
+   SERVICE ITEMS — HOVER LIFT
+   ============================================================ */
+
+.service-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.service-item:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 24px 48px hsla(0, 0%, 0%, 0.45) !important;
+}
+
+
+/* ============================================================
+   PROJECT CARDS — HOVER LIFT
+   ============================================================ */
+
+.project-item > a {
+  transition: transform 0.3s ease !important;
+}
+
+.project-item > a:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ============================================================
+   BLOG CARDS — HOVER LIFT
+   ============================================================ */
+
+.blog-post-item > a {
+  transition: transform 0.3s ease !important;
+  display: block;
+}
+
+.blog-post-item > a:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ============================================================
+   TESTIMONIAL CARDS — HOVER LIFT
+   ============================================================ */
+
+.content-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 48px hsla(0, 0%, 0%, 0.45) !important;
+}
+
+
+/* ============================================================
+   NAVBAR LINK — ACTIVE UNDERLINE INDICATOR
+   ============================================================ */
+
+.navbar-link {
+  position: relative;
+}
+
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 18px;
+  height: 2px;
+  background: var(--orange-yellow-crayola);
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-link:hover::after,
+.navbar-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+
+/* ============================================================
+   SKILL BARS — ANIMATE IN ON SCROLL
+   ============================================================ */
+
+.skill-progress-fill {
+  width: 0% !important;
+  transition: width 1.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.skill-progress-fill.animated {
+  width: var(--target-width) !important;
+}
+
+
+/* ============================================================
+   ARTICLE TITLE UNDERLINE — SLIDE IN
+   ============================================================ */
+
+.article-title::after {
+  width: 0 !important;
+  transition: width 0.9s cubic-bezier(0.4, 0, 0.2, 1) 0.25s !important;
+}
+
+.article-title.line-animated::after {
+  width: 40px !important;
+}
+
+
+/* ============================================================
+   SOCIAL ICONS — HOVER SPIN
+   ============================================================ */
+
+.social-item .social-link {
+  transition: transform 0.3s ease, color 0.3s ease !important;
+  display: inline-block;
+}
+
+.social-item .social-link:hover {
+  transform: rotate(18deg) scale(1.25);
+}
+
+
+/* ============================================================
+   FORM INPUT — FOCUS GLOW
+   ============================================================ */
+
+.form-input {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 0 3px hsla(45, 100%, 72%, 0.18);
+}
+
+
+/* ============================================================
+   SIDEBAR INFO MORE BUTTON — GLOW PULSE
+   ============================================================ */
+
+.info_more-btn {
+  animation: btn-glow 3s ease-in-out infinite;
+}
+
+@keyframes btn-glow {
+  0%, 100% { box-shadow: var(--shadow-2); }
+  50%       { box-shadow: 0 0 22px hsla(45, 100%, 72%, 0.28); }
+}
+
+
+/* ============================================================
+   TYPING CURSOR
+   ============================================================ */
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.85em;
+  background: var(--orange-yellow-crayola);
+  margin-left: 3px;
+  vertical-align: middle;
+  border-radius: 1px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+
+/* ============================================================
+   RIPPLE CLICK
+   ============================================================ */
+
+@keyframes ripple-anim {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+
+/* ============================================================
+   ICON BOX — SPIN ON HOVER
+   ============================================================ */
+
+.icon-box {
+  transition: transform 0.4s ease !important;
+}
+
+.icon-box:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+
+/* ============================================================
+   SKILL CLIENTS IMAGES — FADE IN
+   ============================================================ */
+
+.clients-item img {
+  transition: filter 0.4s ease, transform 0.3s ease !important;
+}
+
+.clients-item img:hover {
+  filter: grayscale(0) !important;
+  transform: scale(1.08);
+}
+
+
+/* ============================================================
+   PAGE TRANSITION
+   ============================================================ */
+
+article.active {
+  animation: page-in 0.45s cubic-bezier(0.4, 0, 0.2, 1) backwards !important;
+}
+
+@keyframes page-in {
+  0%   { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
