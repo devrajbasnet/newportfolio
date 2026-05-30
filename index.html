@@ -99,7 +99,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min
 ::-webkit-scrollbar-thumb{background:var(--accent);border-radius:4px}
 
 /* ── LAYOUT ── */
-.wrapper{position:relative;z-index:1;display:flex;min-height:100vh;max-width:1280px;margin:0 auto;padding:32px 24px;gap:28px;align-items:flex-start}
+.wrapper{position:relative;z-index:1;display:flex;max-width:1280px;margin:0 auto;padding:32px 24px 0;gap:28px;align-items:flex-start}
 
 /* ── SIDEBAR — fixed ── */
 .sidebar{width:var(--sidebar);flex-shrink:0;position:fixed;top:32px;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:32px 24px;display:flex;flex-direction:column;gap:0;overflow:hidden;max-height:calc(100vh - 64px);overflow-y:auto;z-index:10}
@@ -174,7 +174,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min
 .nav-btn.active{background:var(--accent);color:#fff;box-shadow:0 4px 14px #f9731650}
 
 /* content padding so nav never covers it */
-.main-col{padding-bottom:80px}
+.main-col{padding-bottom:100px;flex:1;min-width:0;display:flex;flex-direction:column}
 
 /* mobile — icon + label stacked */
 @media(max-width:600px){
@@ -197,6 +197,36 @@ html.light .bottom-nav-inner{
   border-color:rgba(0,0,0,.1) !important;
   box-shadow:0 8px 40px rgba(0,0,0,.12),0 0 0 1px rgba(0,0,0,.06) !important;
 }
+
+/* ── MAIN & PAGE ── */
+.main{flex:1;min-width:0}
+.page{display:none}
+.page.active{display:block;animation:fadeUp .4s ease forwards}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── SCROLL REVEAL ANIMATIONS ── */
+.reveal{
+  opacity:0;
+  transform:translateY(32px);
+  transition:opacity .6s cubic-bezier(.4,0,.2,1), transform .6s cubic-bezier(.4,0,.2,1);
+}
+.reveal.reveal-left{transform:translateX(-40px)}
+.reveal.reveal-right{transform:translateX(40px)}
+.reveal.reveal-scale{transform:scale(.92) translateY(20px)}
+.reveal.visible{
+  opacity:1 !important;
+  transform:none !important;
+}
+/* staggered delay for grid children */
+.reveal-group .reveal:nth-child(1){transition-delay:.05s}
+.reveal-group .reveal:nth-child(2){transition-delay:.12s}
+.reveal-group .reveal:nth-child(3){transition-delay:.19s}
+.reveal-group .reveal:nth-child(4){transition-delay:.26s}
+.reveal-group .reveal:nth-child(5){transition-delay:.33s}
+.reveal-group .reveal:nth-child(6){transition-delay:.40s}
+.reveal-group .reveal:nth-child(7){transition-delay:.47s}
+.reveal-group .reveal:nth-child(8){transition-delay:.54s}
+.reveal-group .reveal:nth-child(9){transition-delay:.61s}
 
 /* ── SECTION HEADER ── */
 .sec-head{display:flex;align-items:center;gap:12px;margin-bottom:28px}
@@ -330,7 +360,7 @@ html.light .bottom-nav-inner{
   .skills-logos{grid-template-columns:repeat(5,1fr)}
 }
 @media(max-width:900px){
-  .wrapper{flex-direction:column;padding:16px 12px}
+  .wrapper{flex-direction:column;padding:16px 12px 0}
   .sidebar{position:relative;top:0;width:100%;max-height:none;overflow-y:visible;flex-shrink:0}
   .main-col{margin-left:0}
   .resume-cols,.services-grid,.testi-grid,.contact-top,.form-row{grid-template-columns:1fr}
@@ -415,6 +445,8 @@ html.light .bg-grid{
         <div class="c-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         <div><div class="c-label">Location</div><div class="c-val">Suryabinayak, Bhaktapur</div></div>
       </div>
+      
+      
     </div>
 
     <div class="socials">
@@ -439,7 +471,7 @@ html.light .bg-grid{
         <div class="sec-head"><span class="sec-dot"></span><h2>About Me</h2></div>
         <div class="about-intro">
           <h3>Hello, I'm</h3>
-          <p style="font-size:1.05rem;margin-bottom:10px"><span>Devraj Basnet</span> — Backend &amp; Frontend Developer</p>
+          <p style="font-size:1.05rem;margin-bottom:10px"><span>Devraj Basnet</span> — Software Developer</p>
           <p>Specializing in <span>React.js</span> and <span>ASP.NET</span>, I build scalable, responsive web applications with clean, efficient code. Currently working at <span>Siliconsoft and IT Consultant Pvt. Ltd</span>, I bridge the gap between beautiful frontends and robust backends to deliver seamless digital experiences.</p>
         </div>
 
@@ -462,11 +494,11 @@ html.light .bg-grid{
             <div class="testi-text">Devraj brings strong technical skills and a calm, collaborative energy to every task. His knowledge in .NET and frontend technologies is truly impressive.</div>
           </div>
           <div class="testi-card">
-             <div class="testi-header"><img src="images/sabin.jpg" alt="" class="testi-avatar"><div><div class="testi-name">Sabin Gautam</div><span class="testi-role">Team Lead</span></div></div>
+            <div class="testi-header"><img src="images/rama.jpg" alt="" class="testi-avatar"><div><div class="testi-name">Salina Dahal</div><span class="testi-role">Data Engineer</span></div></div>
             <div class="testi-text">Devraj not only develops great web applications but also ensures they are user-friendly and responsive. He's a great asset to any tech team.</div>
           </div>
           <div class="testi-card">
-            <div class="testi-header"><img src="images/rama.jpg" alt="" class="testi-avatar"><div><div class="testi-name">Salina Dahal</div><span class="testi-role">Data Engineer</span></div></div>
+            <div class="testi-header"><img src="images/sabin.jpg" alt="" class="testi-avatar"><div><div class="testi-name">Sabin Gautam</div><span class="testi-role">Team Lead</span></div></div>
             <div class="testi-text">His debugging skills and clean code practices made a significant difference. He takes ownership and delivers — every single time.</div>
           </div>
         </div>
@@ -509,7 +541,7 @@ html.light .bg-grid{
               </div>
               <div class="timeline-item">
                 <div class="tl-date">2019 — 2024</div>
-                <div class="tl-title">Bachelor of Science in Computer Science and Information Technology</div>
+                <div class="tl-title">BSc Computer Science &amp; IT</div>
                 <div class="tl-sub">Swastik College — Tribhuvan University</div>
                 <a href="https://swastikcollege.edu.np/" class="link" target="_blank">View College →</a>
               </div>
@@ -594,11 +626,11 @@ html.light .bg-grid{
           </div>
           <div class="port-card" data-cat="webapp">
             <div class="port-thumb"><img src="images/moviestore.png" alt="Movie Store" onerror="this.parentElement.innerHTML='<div class=port-thumb-placeholder>🎬</div>'"/></div>
-            <div class="port-info"><div class="port-tag">Webapp</div><div class="port-title">Movie Store Webapp</div><a href="#" class="port-link">View Project</a></div>
+            <div class="port-info"><div class="port-tag">Webapp</div><div class="port-title">Movie Store Webapp</div><a href="#" class="port-link">view Project</a></div>
           </div>
           <div class="port-card" data-cat="webapp">
             <div class="port-thumb"><img src="images/breast.png" alt="Cancer Detection" onerror="this.parentElement.innerHTML='<div class=port-thumb-placeholder>🔬</div>'"/></div>
-            <div class="port-info"><div class="port-tag">Webapp · ML</div><div class="port-title">Breast Cancer Detection</div><a href="#" class="port-link">View Project</a></div>
+            <div class="port-info"><div class="port-tag">Webapp · ML</div><div class="port-title">Breast Cancer Detection</div><a href="#" class="port-link">view Project</a></div>
           </div>
           <div class="port-card" data-cat="webapp">
             <div class="port-thumb"><img src="images/account.png" alt="Billing" onerror="this.parentElement.innerHTML='<div class=port-thumb-placeholder>🧾</div>'"/></div>
@@ -641,7 +673,7 @@ html.light .bg-grid{
           </div>
           <div class="blog-card">
             <div class="blog-thumb"><img src="images/group.png" alt="College Farewell" loading="lazy" onerror="this.parentElement.innerHTML='<div class=blog-thumb-placeholder>🎉</div>'"/></div>
-            <div class="blog-body"><div class="blog-date">2024</div><div class="blog-title">College Farewell</div><div class="blog-excerpt">Exploring nature, culture, and experiences across Nepal — capturing moments that inspire growth and creativity.</div></div>
+            <div class="blog-body"><div class="blog-date">2023</div><div class="blog-title">College Farewell</div><div class="blog-excerpt">Celebrating the end of an era — memories, milestones, and new beginnings from the BSc CSIT graduation ceremony.</div></div>
           </div>
         </div>
       </section>
@@ -669,7 +701,7 @@ html.light .bg-grid{
         <div class="contact-panel active" id="ct-info">
           <div class="contact-info" style="max-width:560px;margin:0 auto">
             <div class="contact-info-card">
-             <div class="ci-icon">
+              <div class="ci-icon">
   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
     <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
     1.1.9 2 2 2h16c1.1 0 2-.9 
@@ -728,7 +760,7 @@ html.light .bg-grid{
         <!-- Panel: Message form -->
         <div class="contact-panel" id="ct-form">
           <div class="form-wrap" style="max-width:680px;margin:0 auto">
-            <h3>Do you have project ?? Let's talk</h3>
+            <h3>Do you have any project?? Lets's talk...</h3>
             <div class="form-row">
               <div class="form-group"><label>Full Name</label><input type="text" id="fname" placeholder="Your name"/></div>
               <div class="form-group"><label>Email</label><input type="email" id="femail" placeholder="your@email.com"/></div>
@@ -890,6 +922,98 @@ function sendMsg(){
   resize();init();draw();
   window._reinitParticles=init;
   window.addEventListener('resize',()=>{resize();init();});
+})();
+// ── SCROLL REVEAL ──
+(function(){
+  function tagReveal(){
+    // section headers
+    document.querySelectorAll('.sec-head').forEach(el=>{
+      if(!el.classList.contains('reveal')){el.classList.add('reveal','reveal-left')}
+    });
+    // about intro
+    document.querySelectorAll('.about-intro').forEach(el=>{
+      if(!el.classList.contains('reveal'))el.classList.add('reveal');
+    });
+    // service cards - staggered
+    const sg=document.querySelector('.services-grid');
+    if(sg&&!sg.classList.contains('reveal-group')){
+      sg.classList.add('reveal-group');
+      sg.querySelectorAll('.service-card').forEach(el=>{if(!el.classList.contains('reveal'))el.classList.add('reveal','reveal-scale')});
+    }
+    // testimonial cards
+    const tg=document.querySelector('.testi-grid');
+    if(tg&&!tg.classList.contains('reveal-group')){
+      tg.classList.add('reveal-group');
+      tg.querySelectorAll('.testi-card').forEach(el=>{if(!el.classList.contains('reveal'))el.classList.add('reveal','reveal-scale')});
+    }
+    // skill logos
+    const sl=document.querySelector('.skills-logos');
+    if(sl&&!sl.classList.contains('reveal-group')){
+      sl.classList.add('reveal-group');
+      sl.querySelectorAll('.skill-logo').forEach(el=>{if(!el.classList.contains('reveal'))el.classList.add('reveal','reveal-scale')});
+    }
+    // timeline items
+    document.querySelectorAll('.timeline-item').forEach((el,i)=>{
+      if(!el.classList.contains('reveal')){
+        el.classList.add('reveal');
+        el.style.transitionDelay=(i*0.08)+'s';
+      }
+    });
+    // skill bars
+    document.querySelectorAll('.skill-bar-item').forEach((el,i)=>{
+      if(!el.classList.contains('reveal')){
+        el.classList.add('reveal','reveal-left');
+        el.style.transitionDelay=(i*0.1)+'s';
+      }
+    });
+    // portfolio cards
+    const pg=document.querySelector('#portGrid');
+    if(pg&&!pg.classList.contains('reveal-group')){
+      pg.classList.add('reveal-group');
+      pg.querySelectorAll('.port-card').forEach(el=>{if(!el.classList.contains('reveal'))el.classList.add('reveal','reveal-scale')});
+    }
+    // blog cards
+    const bg=document.querySelector('.blog-grid');
+    if(bg&&!bg.classList.contains('reveal-group')){
+      bg.classList.add('reveal-group');
+      bg.querySelectorAll('.blog-card').forEach(el=>{if(!el.classList.contains('reveal'))el.classList.add('reveal','reveal-scale')});
+    }
+    // contact info cards
+    document.querySelectorAll('.contact-info-card').forEach((el,i)=>{
+      if(!el.classList.contains('reveal')){
+        el.classList.add('reveal','reveal-left');
+        el.style.transitionDelay=(i*0.1)+'s';
+      }
+    });
+    // form-wrap, map-embed, cv-btn
+    document.querySelectorAll('.form-wrap,.map-embed,.cv-btn,.about-intro').forEach(el=>{
+      if(!el.classList.contains('reveal'))el.classList.add('reveal');
+    });
+  }
+
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+
+  function observeAll(){
+    document.querySelectorAll('.reveal:not(.visible)').forEach(el=>io.observe(el));
+  }
+
+  // tag + observe on load
+  tagReveal();
+  observeAll();
+
+  // re-tag + observe after page switch (new elements become visible)
+  const origShowPage=window.showPage;
+  window.showPage=function(id,btn){
+    origShowPage(id,btn);
+    setTimeout(()=>{tagReveal();observeAll();},50);
+  };
 })();
 </script>
 </body>
